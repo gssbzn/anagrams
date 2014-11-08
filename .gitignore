@@ -1,0 +1,23 @@
+# Ignore all logfiles and tempfiles.
+/log/*.log
+/tmp
+tmp/**/*
+
+
+# Ignore Doc
+doc/*
+
+
+# General swap/backup files
+*.so
+*.log
+*.out
+*~
+*.swp
+*.DS_Store
+*.lock
+
+# Anagrams especific
+wl.txt
+anagrams.txt
+ananagrams.txt

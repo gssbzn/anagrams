@@ -1,0 +1,10 @@
+= Anagrams
+Determine from a list of words wich ones are anagrams from others.
+
+==Technology
+
+* {Ruby 2.1.3}[https://www.ruby-lang.org/]
+
+==License
+
+MIT License. Copyright 2013 Gustavo Bazan. http://gustavobazan.com
