@@ -1,6 +1,6 @@
 # Test if word b is an anagram of word a
 class Anagram
-  def self.is_anagram(a, b)
+  def self.is_anagram?(a, b)
     if a.length != b.length then
       false
     else

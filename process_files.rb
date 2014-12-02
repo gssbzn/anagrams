@@ -8,7 +8,7 @@ class ProcessFiles
       line = line.chomp
       is_anagram = false
       dictionary.each_key do |word|
-        if Anagram.is_anagram word, line
+        if Anagram.is_anagram? word, line
           dictionary[word] << line
           is_anagram = true
           break
@@ -24,7 +24,7 @@ class ProcessFiles
     f = File.open(file_name, 'w')
     dictionary.each do |word, anagrams|
       f.puts "#{word}, #{anagrams.join(', ')}" unless !is_anagram || anagrams.empty?
-      f.puts "#{word}" if anagrams.empty? unless is_anagram || anagrams.empty?
+      f.puts "#{word}" if anagrams.empty? && !is_anagram
     end
     f.close
   end
